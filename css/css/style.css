@@ -1,6 +1,6 @@
 .header_content,.header_links,.dropdown_info,.dropdown_documenty,.dropdown_zayavki,.dropbtn_info,.dropbtn_documenty,.dropbtn_zayavki,.dropdown_content_info,.dropdown_content_documenty,.dropdown_content_zayavki,.dropdown_content_zadoljennosti,.vakansii,.footer{
   	background-color: #026fb2;
-    color:white;
+    color: white;
 	overflow:auto;
 	border:none;
 }
@@ -63,10 +63,10 @@ a.vk{
 }
 img.logo{
 	height:80;
-    margin-top:8px;
+    margin-top:-2px;
     margin-left:180px;
 }
-.dropdown_info,.dropdown_documenty,.dropdown_zayavki{
+.dropdown_info,.dropdown_documenty,.dropdown_zayavki,.dropdown_zadoljennosti {
 	display:inline-block;
 	margin-top:-80px;
 	box-shadow:none; font-size:10px;
@@ -74,7 +74,7 @@ img.logo{
 .dropdown_documenty{
 	margin-left:20px;
 }
-.dropdown_content_info,.dropdown_content_documenty,.dropdown_content_zayavki{ 
+.dropdown_content_info,.dropdown_content_documenty,.dropdown_content_zayavki,.dropdown_content_zadoljennosti{ 
     transition:opacity 1s;
     z-index:1;
     border-top: 2px solid white;
@@ -85,26 +85,27 @@ img.logo{
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.dropdown_content_info a,.dropdown_content_documenty a,.dropdown_content_zayavki a{
+.dropdown_content_info a,.dropdown_content_documenty a,.dropdown_content_zayavki a,.dropdown_content_zadoljennosti a{
 	color:white;
 	padding:16px,2px;
 	text-decoration:none;
 	display:block;
 }
- .dropdown_info:hover .dropdown_content_info,.dropdown_documenty:hover .dropdown_content_documenty,.dropdown_zayavki:hover .dropdown_content_zayavki{
+ .dropdown_info:hover .dropdown_content_info,.dropdown_documenty:hover .dropdown_content_documenty,.dropdown_zayavki:hover .dropdown_content_zayavki,.dropdown_zadoljennosti:hover .dropdown_content_zadoljennosti{
     opacity:1;
     background-color: #fffff;
 	display: block;
 }
-.dropdown_content_info a:hover,.dropdown_content_documenty a:hover,.dropdown_content_zayavki a:hover{
+.dropdown_content_info a:hover,.dropdown_content_documenty a:hover,.dropdown_content_zayavki a:hover,.dropdown_content_zadoljennosti a:hover{
     background-color: #025A8F;
 }
-.dropbtn_info,.dropbtn_documenty,.dropbtn_zayavki{
+.dropbtn_info,.dropbtn_documenty,.dropbtn_zayavki,.dropbtn_zadoljennosti{
     color:#ffff;
     background-color: #026fb2;
     font-size: 16px;
     padding:6px 20px;
-    border: none; cursor: pointer;
+    border: none;
+    cursor: pointer;
  }
 .dropbtn_documenty{
 	margin-left:-10px;
@@ -116,7 +117,10 @@ img.logo{
 .dropbtn_zadoljennosti{
     margin-top:-10px;
 }
-.dropdown_content_info.show,.dropdown_content_documenty.show,.dropdown_content_zayavki.show{
+.dropdown_content_zadoljennosti{
+    margin-top:0px;
+}
+.dropdown_content_info.show,.dropdown_content_documenty.show,.dropdown_content_zayavki.show,.dropdown_content_zadoljennosti.show{
     display:block;
     opacity:1;
     visibility:visible;
@@ -124,11 +128,8 @@ img.logo{
 .body_content{
     height:400px;
 }
-.news{
+.news_div1,.news_div2,.news_div3,.news_div4,.news_div5{
 	margin-top:100px;
-	margin-left:120px;
-}
-.news_div1,.news_div2,.news_div3,.news_div4{
 	width:400px;
 	height:300px;
 	color:#fff;
@@ -137,23 +138,8 @@ img.logo{
 	background:#ff8c00;
 }
 .news_div2{
-	margin-top:-300px;
-	margin-left:410px;
-	background:linear-gradient(#386da8,#2a5298,#7db9e8);
-}
-.news_div3{
-	margin-top:-260px;
-	margin-left:410px;
-	background:#ff8c00;
-}
-.news_div4{
-	margin-top:-300px;
-	margin-left:820px;
-	background:linear-gradient(#a1d7ec,#3ebee6,#91d4eb);
-}
-.date{
-	text-align:right;
-	margin-right:10px;
+	background:linear-gradient(blue,white);
+
 }
 .map{
     margin-top:20px;
